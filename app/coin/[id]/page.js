@@ -20,7 +20,7 @@ const Page = () => {
             method: "GET",
             headers: {
                 accept: "application/json",
-                "x-cg-demo-api-key":  `${process.env.coinGeckoApi}` ,
+                "x-cg-demo-api-key":  `CG-fkU3epyjwK2rBShcDuJZeysz` ,
             },
         };
 
@@ -34,7 +34,7 @@ const Page = () => {
         const url = `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=${currency.name}&days=10&interval=daily`;
         const options = {
             method: 'GET',
-            headers: { accept: 'application/json', 'x-cg-demo-api-key':  `${process.env.coinGeckoApi}` }
+            headers: { accept: 'application/json', 'x-cg-demo-api-key':  `CG-fkU3epyjwK2rBShcDuJZeysz` }
         };
 
       await fetch(url, options)
